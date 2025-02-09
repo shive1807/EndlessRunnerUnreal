@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"/Users/shivambhati/Documents/Unreal/EndlessRun/Source/EndlessRun/EndlessRun.Build.cs",
+		"/Users/shivambhati/Documents/Unreal/EndlessRun/Source/EndlessRun.Target.cs",
+		"/Users/shivambhati/Documents/Unreal/EndlessRun/Source/EndlessRunEditor.Target.cs"
+	],
+	"EngineVersion": "5.3.2"
+}

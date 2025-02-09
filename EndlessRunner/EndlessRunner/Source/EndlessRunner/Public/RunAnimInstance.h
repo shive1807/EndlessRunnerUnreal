@@ -15,5 +15,19 @@ class ENDLESSRUNNER_API URunAnimInstance : public UAnimInstance
 	GENERATED_BODY()
 	
 public:
+    UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category="Movement")
+    float Speed;
     
+    UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category="Movement")
+    float bIsInAir;
+    
+    UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category="Movement")
+    class APawn* Pawn;
+    
+    UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category="Movement")
+    class UPawnMovementComponent* MovementComponent;
+    
+    virtual void NativeInitializeAnimation() override;
+    
+    virtual void NativeUpdateAnimation(float DeltaSeconds) override;
 };
